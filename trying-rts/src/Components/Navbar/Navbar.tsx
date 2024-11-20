@@ -37,6 +37,8 @@ function Navbar() {
           <button>Sign-up</button>
         </div>
       </div>
+      <br />
+      <hr />
       <Sidenav />
     </div>
   );
