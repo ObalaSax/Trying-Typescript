@@ -1,45 +1,62 @@
+import { BsFillGrid3X3GapFill, BsXLg } from "react-icons/bs";
 import "./Navbar.css";
+import Logo from "../../assets/Logo.svg";
 
 import { useState } from "react";
-import Sidenav from "../Sidenav/Sidenav";
 
 function Navbar() {
-  const [openSidenav, setOpenSidenav] = useState(true);
+  const [openNavbar, setOpenNavbar] = useState(true);
 
-  const handleOpenSidenav = () => {
-    setOpenSidenav(!openSidenav);
+  const handleOpenNavbar = () => {
+    setOpenNavbar(!openNavbar);
+
+    {
+      /** const navList = document.getElementById("navbar-menu");*/
+    }
   };
+
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="navbar-sidebar-and-logo">
-          <button onClick={handleOpenSidenav}>Open</button>
-          <img src="" alt="Logo" />
+        <div className="navbar-logo">
+          <img src={Logo} alt="Logo" />
+          <button onClick={handleOpenNavbar}>
+            {openNavbar ? <BsXLg /> : <BsFillGrid3X3GapFill />}
+          </button>
         </div>
         <div className="navbar-links">
-          <ul>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Contacts</a>
-            </li>
-            <li>
-              <a href="">Noma Sana</a>
-            </li>
-          </ul>
-        </div>
-        <div className="navbar-authentication">
-          <button>Login</button>
-          <button>Sign-up</button>
+          <div
+            className={openNavbar ? "navbar-links-open" : "navbar-links-closed"}
+          >
+            <ul id="navbar-menu">
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Contacts</a>
+              </li>
+              <li>
+                <a href="">Music</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            className={
+              openNavbar
+                ? "navbar-authentication-open"
+                : "navbar-authentication-closed"
+            }
+          >
+            <button className="btn-login-open">Login</button>
+            <button className="btn-signup-closed">Sign-up</button>
+          </div>
         </div>
       </div>
       <br />
       <hr />
-      <Sidenav />
     </div>
   );
 }
