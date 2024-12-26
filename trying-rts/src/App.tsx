@@ -1,10 +1,15 @@
-//import Authentication from "./Pages/Login/Authentication";
+//My Styles
+import "./App.css";
+
+//Pages Imports
 import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="all-app">
+        <Navbar />
+      </div>
     </>
   );
 }
