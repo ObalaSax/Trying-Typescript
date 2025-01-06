@@ -1,0 +1,372 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Styles for extra small screens */
+  .navbar {
+    background: aqua;
+    width: 100%;
+    padding: 2px;
+    height: 7vh;
+    position: sticky;
+  }
+  .navbar-container {
+    background: goldenrod;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-logo {
+    background-color: red;
+  }
+  .navbar-links {
+    background: greenyellow;
+  }
+  .navbar-links ul {
+    display: flex;
+  }
+  .navbar-links ul li {
+    background: lightblue;
+    list-style: none;
+    display: flex;
+    margin: 0px 15px;
+  }
+  .navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar-links ul li a:hover {
+    background: yellow;
+  }
+
+  .navbar-useractions {
+    background: pink;
+  }
+
+  .navbar-useractions ul {
+    display: flex;
+  }
+  .navbar-useractions ul li {
+    list-style: none;
+    margin: 0px 15px;
+  }
+
+  .navbar-useractions ul li a {
+    text-decoration: none;
+    display: block;
+    background: forestgreen;
+    padding: 10px;
+  }
+  .navbar-useractions ul li a:hover {
+    background: coral;
+  }
+
+  .navbar-cart {
+    background: blueviolet;
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-cart h3 {
+    margin: 0px 10px;
+  }
+
+  .navbar-cart p {
+    background: green;
+    color: white;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for small screens */
+  .navbar {
+    background: aqua;
+    width: 100%;
+    padding: 2px;
+    height: 7vh;
+    position: sticky;
+  }
+  .navbar-container {
+    background: goldenrod;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-logo {
+    background-color: red;
+  }
+  .navbar-links {
+    background: greenyellow;
+  }
+  .navbar-links ul {
+    display: flex;
+  }
+  .navbar-links ul li {
+    background: lightblue;
+    list-style: none;
+    display: flex;
+    margin: 0px 15px;
+  }
+  .navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar-links ul li a:hover {
+    background: yellow;
+  }
+
+  .navbar-useractions {
+    background: pink;
+  }
+
+  .navbar-useractions ul {
+    display: flex;
+  }
+  .navbar-useractions ul li {
+    list-style: none;
+    margin: 0px 15px;
+  }
+
+  .navbar-useractions ul li a {
+    text-decoration: none;
+    display: block;
+    background: forestgreen;
+    padding: 10px;
+  }
+  .navbar-useractions ul li a:hover {
+    background: coral;
+  }
+
+  .navbar-cart {
+    background: blueviolet;
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-cart h3 {
+    margin: 0px 10px;
+  }
+
+  .navbar-cart p {
+    background: green;
+    color: white;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for medium screens */
+  .navbar {
+    background: aqua;
+    width: 100%;
+    padding: 2px;
+    height: 7vh;
+    position: sticky;
+  }
+  .navbar-container {
+    background: goldenrod;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-logo {
+    background-color: red;
+  }
+  .navbar-links {
+    background: greenyellow;
+  }
+  .navbar-links ul {
+    display: flex;
+  }
+  .navbar-links ul li {
+    background: lightblue;
+    list-style: none;
+    display: flex;
+    margin: 0px 15px;
+  }
+  .navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar-links ul li a:hover {
+    background: yellow;
+  }
+
+  .navbar-useractions {
+    background: pink;
+  }
+
+  .navbar-useractions ul {
+    display: flex;
+  }
+  .navbar-useractions ul li {
+    list-style: none;
+    margin: 0px 15px;
+  }
+
+  .navbar-useractions ul li a {
+    text-decoration: none;
+    display: block;
+    background: forestgreen;
+    padding: 10px;
+  }
+  .navbar-useractions ul li a:hover {
+    background: coral;
+  }
+
+  .navbar-cart {
+    background: blueviolet;
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-cart h3 {
+    margin: 0px 10px;
+  }
+
+  .navbar-cart p {
+    background: green;
+    color: white;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for large screens */
+  .navbar {
+    background: transparent;
+    width: 100%;
+    padding: 0px;
+    height: 7vh;
+    position: sticky;
+  }
+  .navbar-container {
+    background: darkblue;
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-logo {
+    background: transparent;
+    color: white;
+  }
+  .navbar-links {
+    background: transparent;
+    color: white;
+  }
+  .navbar-links ul {
+    display: flex;
+  }
+  .navbar-links ul li {
+    background: transparent;
+    list-style: none;
+    display: flex;
+    margin: 0px 15px;
+  }
+  .navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .navbar-links ul li a:hover {
+    background: tomato;
+    text-decoration: underline 3px;
+  }
+
+  .navbar-useractions {
+    background: transparent;
+  }
+
+  .navbar-useractions ul {
+    display: flex;
+  }
+  .navbar-useractions ul li {
+    list-style: none;
+    margin: 0px 15px;
+  }
+
+  .navbar-useractions ul li a {
+    text-decoration: none;
+    display: block;
+    background: forestgreen;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .navbar-useractions ul li a:hover {
+    background: coral;
+    transform: scale(1.1);
+  }
+
+  .navbar-cart {
+    background: blueviolet;
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-cart h3 {
+    margin: 0px 10px;
+    color: white;
+  }
+
+  .navbar-cart p {
+    background: green;
+    color: white;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+}
