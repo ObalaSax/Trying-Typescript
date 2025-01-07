@@ -12,7 +12,7 @@ function Navbar() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="">bbbbbbbbbb</a>
+              <a href="/shop">Shop</a>
             </li>
             <li>
               <a href="">ccccccccccc</a>
@@ -39,8 +39,10 @@ function Navbar() {
           </ul>
         </div>
         <div className="navbar-cart">
-          <h3>Cart</h3>
-          <p>5</p>
+          <a href="/cart">
+            <h3>Cart</h3>
+            <p>5</p>
+          </a>
         </div>
       </div>
       <hr />
