@@ -1,6 +1,13 @@
 import "./CartItemsCard.css";
 
 function CartItemsCard() {
+  //Buttons Function
+  const handleIncrementItem = () => {
+    //Code
+  };
+  const handleDecrementItem = () => {
+    //code
+  };
   return (
     <div className="cartcard">
       <div className="cartcard-container">
@@ -16,11 +23,12 @@ function CartItemsCard() {
         <div className="cartitems-actions">
           <h3> Item Price</h3>
           <div className="cartitems-actions-buttons">
-            <button>+</button>
-            <input type="text" readOnly />
-            <button>-</button>
+            <button onClick={handleIncrementItem}>+</button>
+            <span>Item Quantity</span>
+            <button onClick={handleDecrementItem}>-</button>
           </div>
         </div>
+        <button>Remove</button>
       </div>
     </div>
   );

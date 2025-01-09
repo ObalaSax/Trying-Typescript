@@ -2,10 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
-import NotFound from "./Pages/NotFound/NotFound";
-import Footer from "./Components/Footer/Footer";
+//import Footer from "./Components/Footer/Footer";
 import Shop from "./Pages/Shop/Shop";
 import CartPage from "./Pages/CartPage/CartPage";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               <Route path="/not-found" element={<NotFound />} />
             </Routes>
           </div>
-          <Footer />
+          {/*<Footer />*/}
         </div>
       </BrowserRouter>
     </>
