@@ -1,41 +1,46 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./ProductCard.css";
 import { addToCart } from "../../Features/Slices/cartSlice";
-import { AppDispatch } from "../../Features/myStore";
+import React from "react";
+import { ProductsData } from "../../Features/Slices/DataApiSlice";
 
-interface ProductsDataProps {
-  id: number;
-  title: string;
-  price: number;
-  discountPercentage: number;
-  thumbnail: string;
-  rating: number;
-}
+const ProductCard: React.FC<ProductsData> = ({
+  id,
+  thumbnail,
+  price,
+  discountPercentage,
+  rating,
+  title,
+}) => {
+  const AddToCartDispatch = useDispatch();
 
-function ProductCard(props: ProductsDataProps) {
-  const AddToCartDispatch = useDispatch<AppDispatch>();
-
-  //Add To Cart Function
+  //Button Function
   const handleAddToCart = () => {
-    AddToCartDispatch(addToCart());
+    AddToCartDispatch(
+      addToCart({ id, title, thumbnail, price, rating, discountPercentage }),
+    );
+    alert("Added");
   };
+
   return (
     <div className="productcard">
       <div className="productcard-container">
-        <img src={props.thumbnail} alt={props.title} />
+        <img src={thumbnail} alt={title} />
         <div className="productcard-details">
-          <h2>{props.title}</h2>
+          <h2>{title}</h2>
           <hr />
-          <h3>{props.price}</h3>
+          <h3>${price}</h3>
         </div>
         <div className="productcard-rating">
-          <h4>{props.rating}</h4>
-          <h4>{props.discountPercentage}</h4>
+          <h4>Rating:{rating}</h4>
+          <h4>{discountPercentage}%</h4>
         </div>
-        <button onClick={handleAddToCart}>+ Add To Cart</button>
+        <div className="productcard-button">
+          <button onClick={handleAddToCart}>+ Add To Cart</button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProductCard;

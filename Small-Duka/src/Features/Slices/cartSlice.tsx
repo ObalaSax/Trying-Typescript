@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ProductsData } from "./DataApiSlice";
 
 export interface CartItem extends ProductsData {
+  discountPercentage: number;
   cartQuantity: number;
 }
 export interface CartState {
@@ -17,12 +18,12 @@ export const cartReducer = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<ProductsData>) => {
-      //CODE
       const existingItem = state.cartItems.find(
         (item) => item.id === action.payload.id,
       );
+
       if (existingItem) {
-        existingItem.cartQuantity++;
+        existingItem.cartQuantity += 1;
       } else {
         state.cartItems.push({ ...action.payload, cartQuantity: 1 });
       }

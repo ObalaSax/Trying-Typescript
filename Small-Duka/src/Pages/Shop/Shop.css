@@ -1,0 +1,90 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Styles for extra small screens */
+  .shop-loading {
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .shop {
+    background: pink;
+    padding: 20px;
+  }
+  .shop-container {
+    background: lightblue;
+  }
+  .shop-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for small screens */
+  .shop-loading {
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .shop {
+    background: pink;
+    padding: 20px;
+  }
+  .shop-container {
+    background: lightblue;
+  }
+  .shop-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for medium screens */
+  .shop-loading {
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .shop {
+    background: pink;
+    padding: 20px;
+  }
+  .shop-container {
+    background: lightblue;
+  }
+  .shop-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Styles for large screens */
+  .shop-loading {
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .shop {
+    background: white;
+    padding: 20px;
+  }
+  .shop-container {
+    background: transparent;
+    box-shadow: 5px 5px 10px black;
+  }
+  .shop-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

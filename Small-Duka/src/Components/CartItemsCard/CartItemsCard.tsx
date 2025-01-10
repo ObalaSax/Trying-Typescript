@@ -1,6 +1,12 @@
 import "./CartItemsCard.css";
-
-function CartItemsCard() {
+import { CartItem } from "../../Features/Slices/cartSlice";
+const CartItemsCard: React.FC<CartItem> = ({
+  id,
+  price,
+  thumbnail,
+  title,
+  cartQuantity,
+}) => {
   //Buttons Function
   const handleIncrementItem = () => {
     //Code
@@ -11,20 +17,20 @@ function CartItemsCard() {
   return (
     <div className="cartcard">
       <div className="cartcard-container">
-        <div className="cartitems-img">
-          <img src="" alt="Cart Image" />
+        <div className="cartitems-img" key={id}>
+          <img src={thumbnail} alt={title} />
         </div>
         <hr />
         <div className="cartitems-details">
-          <h2>Product Title</h2>
-          <h3>Product Price</h3>
+          <h2>{title}</h2>
+          <h3>{price}</h3>
         </div>
         <hr />
         <div className="cartitems-actions">
-          <h3> Item Price</h3>
+          <h3>{price}</h3>
           <div className="cartitems-actions-buttons">
             <button onClick={handleIncrementItem}>+</button>
-            <span>Item Quantity</span>
+            <span>{cartQuantity}</span>
             <button onClick={handleDecrementItem}>-</button>
           </div>
         </div>
@@ -32,6 +38,6 @@ function CartItemsCard() {
       </div>
     </div>
   );
-}
+};
 
 export default CartItemsCard;

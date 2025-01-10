@@ -6,6 +6,8 @@ function CartPage() {
   const cartSelector = useSelector(
     (state: myRootState) => state.cart.cartItems,
   );
+
+  console.log(cartSelector);
   // Check If theres something in the cart if None = Tell User there's nothing
   if (cartSelector.length === 0) {
     return (
@@ -19,7 +21,16 @@ function CartPage() {
     <div className="cartpage">
       <div className="cartpage-container">
         <div className="cartpage-items">
-          <CartItemsCard />
+          {cartSelector.map((cartItem) => (
+            <CartItemsCard
+              key={cartItem.id}
+              id={cartItem.id}
+              thumbnail={cartItem.thumbnail}
+              price={cartItem.price}
+              title={cartItem.title}
+              cartQuantity={cartItem.cartQuantity}
+            />
+          ))}
         </div>
         <div className="cartpage-summary">
           <h1>Cart Summary</h1>

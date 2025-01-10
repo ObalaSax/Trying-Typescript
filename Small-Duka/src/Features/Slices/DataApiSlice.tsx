@@ -5,6 +5,7 @@ export interface ProductsData {
   title: string;
   price: number;
   discountPercentage: number;
+  thumbnail: string;
   rating: number;
 }
 const BASE_URL = "https://dummyjson.com/";
