@@ -3,62 +3,61 @@
   /* Styles for extra small screens */
   .navbar {
     background: aqua;
+    height: 10vh;
+    position: fixed;
     width: 100%;
-    padding: 2px;
-    height: 7vh;
-    position: sticky;
   }
   .navbar-container {
-    background: goldenrod;
-    padding: 3px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    background: red;
     height: 100%;
-    width: 100%;
   }
   .navbar-logo {
-    background-color: red;
+    background: gold;
   }
-  .navbar-links {
+  .navbar-links-open {
     background: greenyellow;
-  }
-  .navbar-links ul {
-    display: flex;
-  }
-  .navbar-links ul li {
-    background: lightblue;
-    list-style: none;
-    display: flex;
-    margin: 0px 15px;
-  }
-  .navbar-links ul li a {
-    display: block;
-    text-decoration: none;
     padding: 10px;
+    left: 100;
+    height: 80vh;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    width: 80%;
+  }
+  .navbar-links-close {
+    transition: all 0.5s ease-in-out;
+    left: -1000;
+  }
+  .navbar-links-open ul {
+    display: block;
+  }
+  .navbar-links-open ul li {
+    background: lightblue;
+  }
+  .navbar-links-open ul li a {
+    display: block;
+    background: pink;
+    padding: 2px;
+    margin: 5px 0px;
+    width: 100%;
   }
 
-  .navbar-links ul li a:hover {
+  .navbar-links-open ul li a:hover {
     background: yellow;
   }
 
   .navbar-useractions {
     background: pink;
+    width: 80%;
   }
 
   .navbar-useractions ul {
     display: flex;
   }
   .navbar-useractions ul li {
-    list-style: none;
-    margin: 0px 15px;
   }
 
   .navbar-useractions ul li a {
-    text-decoration: none;
-    display: block;
     background: forestgreen;
-    padding: 10px;
   }
   .navbar-useractions ul li a:hover {
     background: coral;
@@ -66,10 +65,6 @@
 
   .navbar-cart {
     background: blueviolet;
-    display: flex;
-    width: 5%;
-    justify-content: center;
-    align-items: center;
   }
   .navbar-cart h3 {
     margin: 0px 10px;
@@ -77,14 +72,6 @@
 
   .navbar-cart p {
     background: green;
-    color: white;
-    width: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50px;
-    margin: 0px 10px;
-    padding: 5px;
   }
 }
 
@@ -275,7 +262,7 @@
     background: transparent;
     width: 100%;
     padding: 0px;
-    height: 7vh;
+    height: 10vh;
     position: sticky;
   }
   .navbar-container {
@@ -291,20 +278,23 @@
     background: transparent;
     color: white;
   }
-  .navbar-links {
+  .navbar-logo button {
+    display: none;
+  }
+  .navbar-links-open {
     background: transparent;
     color: white;
   }
-  .navbar-links ul {
+  .navbar-links-open ul {
     display: flex;
   }
-  .navbar-links ul li {
+  .navbar-links-open ul li {
     background: transparent;
     list-style: none;
     display: flex;
     margin: 0px 15px;
   }
-  .navbar-links ul li a {
+  .navbar-links-open ul li a {
     display: block;
     text-decoration: none;
     padding: 10px;
@@ -314,7 +304,7 @@
     transition: all ease-in-out 0.2s;
   }
 
-  .navbar-links ul li a:hover {
+  .navbar-links-open ul li a:hover {
     background: tomato;
     text-decoration: underline 3px;
   }
@@ -347,9 +337,9 @@
   }
 
   .navbar-cart {
-    background: blueviolet;
+    background: tomato;
     display: flex;
-    width: 5%;
+    width: 8%;
     justify-content: center;
     align-items: center;
     border-radius: 5px;

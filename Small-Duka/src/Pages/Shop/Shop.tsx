@@ -11,20 +11,14 @@ function Shop() {
   //Pagination Manenoz
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  /*
   const [productsPerPage] = useState(10);
 
   const lastProductIndex = currentPage * productsPerPage;
   const firstProductIndex = lastProductIndex - productsPerPage;
 
-  const currentProducts = myData;
-  const onlyProducts = currentProducts.products.slice(
-    firstProductIndex,
-    lastProductIndex,
-  );
+  //const onlyProducts = myData.slice(firstProductIndex, lastProductIndex);
+  //console.log(onlyProducts);
 
-  console.log(onlyProducts);
-*/
   //LOADING STATE
   if (isLoading) {
     return (
@@ -38,7 +32,7 @@ function Shop() {
   //The actual Page
   return (
     <div className="shop">
-      <div className="shop-container col-3">
+      <div className="shop-container ">
         <h1>Shop</h1>
         <hr />
         <div className="shop-data">

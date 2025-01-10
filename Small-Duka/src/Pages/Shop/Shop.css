@@ -75,12 +75,13 @@
     align-items: center;
   }
   .shop {
-    background: white;
+    background: hsl(0, 0%, 93%);
     padding: 20px;
   }
   .shop-container {
-    background: transparent;
-    box-shadow: 5px 5px 10px black;
+    background: white;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 10px;
   }
   .shop-data {
     display: flex;

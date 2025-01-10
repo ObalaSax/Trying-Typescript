@@ -1,12 +1,23 @@
 import "./Navbar.css";
+import Logo from "../../assets/Logo.svg";
+import { useState } from "react";
 function Navbar() {
+  const [toogleNavbar, setToggleNavbar] = useState(true);
+  const handleNavBar = () => {
+    setToggleNavbar(!toogleNavbar);
+  };
   return (
     <div className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <h2>Logo</h2>
+          <button onClick={handleNavBar}>
+            {toogleNavbar ? "Open" : "Close"}
+          </button>
+          <img src={Logo} alt="LogoIpsam" />
         </div>
-        <div className="navbar-links">
+        <div
+          className={toogleNavbar ? "navbar-links-open" : "navbar-links-close"}
+        >
           <ul>
             <li>
               <a href="/">Home</a>

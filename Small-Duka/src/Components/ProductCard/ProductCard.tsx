@@ -16,10 +16,14 @@ const ProductCard: React.FC<ProductsData> = ({
 
   //Button Function
   const handleAddToCart = () => {
-    AddToCartDispatch(
-      addToCart({ id, title, thumbnail, price, rating, discountPercentage }),
-    );
-    alert("Added");
+    try {
+      AddToCartDispatch(
+        addToCart({ id, title, thumbnail, price, rating, discountPercentage }),
+      );
+      alert("Added");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

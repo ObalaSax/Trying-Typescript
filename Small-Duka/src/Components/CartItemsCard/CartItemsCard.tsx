@@ -1,5 +1,7 @@
 import "./CartItemsCard.css";
-import { CartItem } from "../../Features/Slices/cartSlice";
+import { CartItem, removeFromCart } from "../../Features/Slices/cartSlice";
+import { useDispatch } from "react-redux";
+
 const CartItemsCard: React.FC<CartItem> = ({
   id,
   price,
@@ -7,12 +9,16 @@ const CartItemsCard: React.FC<CartItem> = ({
   title,
   cartQuantity,
 }) => {
+  const cartDispatch = useDispatch();
   //Buttons Function
   const handleIncrementItem = () => {
     //Code
   };
   const handleDecrementItem = () => {
     //code
+  };
+  const handleRemoveFromCart = (id: number) => {
+    cartDispatch(removeFromCart(id));
   };
   return (
     <div className="cartcard">
@@ -34,7 +40,7 @@ const CartItemsCard: React.FC<CartItem> = ({
             <button onClick={handleDecrementItem}>-</button>
           </div>
         </div>
-        <button>Remove</button>
+        <button onClick={() => handleRemoveFromCart}>Remove</button>
       </div>
     </div>
   );

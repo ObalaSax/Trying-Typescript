@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ProductsData } from "./DataApiSlice";
 
 export interface CartItem extends ProductsData {
-  discountPercentage: number;
   cartQuantity: number;
 }
 export interface CartState {

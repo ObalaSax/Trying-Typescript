@@ -1,180 +1,57 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* Styles for extra small screens */
-  .cartpage {
-    background: purple;
-    padding: 2px;
-  }
-  .cartpage-container {
-    background: greenyellow;
-    display: flex;
-    padding: 10px auto;
-  }
-  .cartpage-items {
-    background: pink;
-    width: 75%;
-  }
-  .cartpage-summary {
-    background: teal;
-    width: 24%;
-    right: 0;
-    margin-right: 12px;
-    position: fixed;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px gray;
-    padding: 4px;
-  }
-
-  .cart-summary-details {
-    background: lightgreen;
-  }
-  .cart-summary-details h4 {
-    text-align: right;
-    padding: 2px;
-    margin-right: 10px;
-  }
-  .cartpage-summary button {
-    width: 100%;
-    padding: 2px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: none;
-    background: coral;
-    color: white;
-    font-weight: 500;
-    height: 40px;
-    transition: all 0.2s ease-in-out;
-  }
-  .cartpage-summary button:hover {
-    background: teal;
-  }
-  .cartpage-summary button:active {
-    background: hsl(180, 16%, 51%);
-    transform: scale(0.95);
-    border: 1px white solid;
-  }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Styles for small screens */
-  .cartpage {
-    background: purple;
-    padding: 2px;
-  }
-  .cartpage-container {
-    background: greenyellow;
-    display: flex;
-    padding: 10px auto;
-  }
-  .cartpage-items {
-    background: pink;
-    width: 75%;
-  }
-  .cartpage-summary {
-    background: teal;
-    width: 24%;
-    right: 0;
-    margin-right: 12px;
-    position: fixed;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px gray;
-    padding: 4px;
-  }
-
-  .cart-summary-details {
-    background: lightgreen;
-  }
-  .cart-summary-details h4 {
-    text-align: right;
-    padding: 2px;
-    margin-right: 10px;
-  }
-  .cartpage-summary button {
-    width: 100%;
-    padding: 2px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: none;
-    background: coral;
-    color: white;
-    font-weight: 500;
-    height: 40px;
-    transition: all 0.2s ease-in-out;
-  }
-  .cartpage-summary button:hover {
-    background: teal;
-  }
-  .cartpage-summary button:active {
-    background: hsl(180, 16%, 51%);
-    transform: scale(0.95);
-    border: 1px white solid;
-  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Styles for medium screens */
-  .cartpage {
-    background: purple;
-    padding: 2px;
-  }
-  .cartpage-container {
-    background: greenyellow;
-    display: flex;
-    padding: 10px auto;
-  }
-  .cartpage-items {
-    background: pink;
-    width: 75%;
-  }
-  .cartpage-summary {
-    background: teal;
-    width: 24%;
-    right: 0;
-    margin-right: 12px;
-    position: fixed;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px gray;
-    padding: 4px;
-  }
-
-  .cart-summary-details {
-    background: lightgreen;
-  }
-  .cart-summary-details h4 {
-    text-align: right;
-    padding: 2px;
-    margin-right: 10px;
-  }
-  .cartpage-summary button {
-    width: 100%;
-    padding: 2px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: none;
-    background: coral;
-    color: white;
-    font-weight: 500;
-    height: 40px;
-    transition: all 0.2s ease-in-out;
-  }
-  .cartpage-summary button:hover {
-    background: teal;
-  }
-  .cartpage-summary button:active {
-    background: hsl(180, 16%, 51%);
-    transform: scale(0.95);
-    border: 1px white solid;
-  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Styles for large screens */
+  .cartpage-emptyCart {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, red, blue);
+    justify-items: center;
+    align-content: center;
+  }
+
+  .cartpage-emptyCart-container {
+    width: 400px;
+    height: 400px;
+    background: white;
+    padding: 10px;
+    justify-items: center;
+    align-content: center;
+    border-radius: 10px;
+  }
+  .cartpage-emptyCart-container img {
+    display: block;
+    width: 60%;
+    height: 50%;
+    margin: 20px 0px;
+  }
+  .cartpage-emptyCart-details {
+    display: flex;
+  }
+  .cartpage-emptyCart-details a {
+    padding: 0px 10px;
+    display: block;
+    font-weight: 500;
+    color: black;
+  }
+  .cartpage-emptyCart-container a:hover {
+    transform: scale(1.1);
+    color: blue;
+  }
   .cartpage {
     background: purple;
     padding: 2px;
